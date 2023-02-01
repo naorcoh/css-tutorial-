@@ -1,0 +1,57 @@
+/* not good option override the browser default setting
+when user change browser setting the font remain at 16px */
+/* p {
+    font-size: 32px;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* not good add extra vertical scroll bar */
+/* body {
+    width: 100vw;
+} */
+
+
+body {
+  width: 100%;
+  /* grow the body min height relative to view   */
+  min-height: 100vh;
+}
+
+header {
+  border: 2px dashed red;
+  width: 100%;
+}
+
+h1 {
+  border: 2px dashed red;
+  /* child element width relative to parent size % */
+  width: 50%;
+  padding: 0.5em;
+}
+
+
+/* font size of the root element */
+main {    
+  font-size: 2rem;
+  width: 50vw;
+  background-color: skyblue;
+
+}
+
+p {
+  font-size: 2rem;
+  width: 40ch;
+}
+
+/* font size of the parent element 
+not good choice double the size of font because default font size of root element is 16px
+ and the size relative to the parent element and not the root element so size now 64px */
+/* p {
+  font-size: 2em;
+} */
+
+
