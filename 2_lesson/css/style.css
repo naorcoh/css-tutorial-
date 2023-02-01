@@ -1,12 +1,49 @@
+/* universal selector */
+* {
+  font-family: monospace;
+}
+
+/* type selector
+selects all elements that have the given node name. */
 body {
-    font-size: 22px;
+  font-size: 22px;
+}
+/*selector list 
+the , selector is a grouping method that selects all the matching nodes.
+ */
+h1,
+h2 {
+  color: blue;
+}
+/* select <p> html tage */
+p {
+  color: purple;
 }
 
-p{
-    color: purple;
-}
-
+/*class selector
+ selects all elements that have the given class attribute. */
 .gray {
-    color: gray;
+  color: gray;
+}
+/*descendant combinator
+represented by a single space (" ")
+combines two selectors such that elements matched by the second selector are selected if they have an ancestor 
+*/
+p span {
+  text-transform: uppercase;
+  background-color: aqua;
 }
 
+/* use class atrr to select to reuse style */
+/* .highlight {
+  text-transform: uppercase;
+  background-color: gold;
+} */
+
+/* ID selector 
+selects an element based on the value of its id attribute.
+**there should be only one element with a given ID in a document.
+*/
+#second {
+  font-style: italic;
+}
