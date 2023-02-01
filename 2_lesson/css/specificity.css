@@ -1,4 +1,4 @@
-/* class selector has more specficity then element selector */
+/* class selector has more specificity then element selector*/
 .gray {
   color: gray;
 }

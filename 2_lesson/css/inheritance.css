@@ -1,0 +1,39 @@
+/*root element*/
+html {
+  /*inherited property */
+  font-size: 22px;
+  /* non-inherited property */
+  border: 3px solid black;
+}
+
+/*i separate because i have some specific setting i went to see only in body */
+body {
+}
+
+/* only the main element change the font and  inherit font size from parent element*/
+main {
+  /* override the default font */
+  font-family: monospace;
+}
+
+/*inherit example for non-inherited property*/
+*{
+    /* select all element and add border property*/
+    border: 2px red solid;
+}
+
+*{
+    /*inherited property value from parent element*/
+    border: inherit;
+}
+
+/* all typography element(<p> <span> <h1> <h2>) inherited font size property from body element,
+but they don't inherited the border property because it is not  non-inherited property*/
+
+/* form element typically not inherit property */
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
