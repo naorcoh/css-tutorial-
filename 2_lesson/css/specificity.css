@@ -1,0 +1,13 @@
+/* class selector has more specficity then element selector */
+.gray {
+  color: gray;
+}
+/*first rule to apply */
+p {
+  color: purple;
+}
+/*last rule is apply */
+p{
+    color: red;
+}
+
