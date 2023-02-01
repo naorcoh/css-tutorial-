@@ -1,0 +1,18 @@
+h1,
+h2 {
+  color: blue;
+}
+
+.gray {
+  color: gray;
+}
+
+/* override specificity of .gray class*/
+p {
+  color: purple !important;
+}
+
+p{
+    color: red;
+}
+

@@ -1,3 +1,5 @@
+/* https://specificity.keegan.st/ */
+
 /* class selector has more specificity then element selector*/
 .gray {
   color: gray;
